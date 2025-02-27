@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.geometry.Insets?>
+        <?import javafx.scene.control.*?>
+        <?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="modelo.RegistroUsuarioController"
+      spacing="10" padding="20">
+
+<Label text="Registro de Usuario" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+<TextField fx:id="nombreField" promptText="Nombre"/>
+<TextField fx:id="emailField" promptText="Email"/>
+<PasswordField fx:id="passwordField" promptText="Contraseña"/>
+
+<Button fx:id="registrarButton" text="Registrar" onAction="#registrarUsuario"/>
+
+<Label fx:id="mensajeLabel" text="" style="-fx-text-fill: red;"/>
+</VBox>
